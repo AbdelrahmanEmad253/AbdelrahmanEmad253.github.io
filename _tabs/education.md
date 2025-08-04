@@ -196,16 +196,3 @@ order: 2
         </div>
     </div>
 </div>
-
-<div class="education-section">
-    <div class="education-title">🤝 Volunteering</div>
-    
-    <div class="education-item">
-        <div class="education-program">Volunteering Experience</div>
-        <div class="education-provider">Various Organizations</div>
-        <div class="education-date">Ongoing</div>
-        <div class="education-description">
-            Active participation in community service and volunteer initiatives, contributing to social impact projects and community development.
-        </div>
-    </div>
-</div> 
