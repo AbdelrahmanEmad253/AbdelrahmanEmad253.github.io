@@ -5,48 +5,48 @@ order: 1
 
 <style>
 /* Custom CSS for centering content */
-.centered-content {
+.home-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 80vh;
     text-align: center;
     padding: 2rem;
     max-width: 800px;
     margin: 0 auto;
 }
 
-.centered-content h1 {
+.home-content h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
 }
 
-.centered-content h2 {
+.home-content h2 {
     font-size: 1.5rem;
     color: #666;
     margin-bottom: 2rem;
     font-weight: normal;
 }
 
-.centered-content p {
+.home-content p {
     text-align: center;
     margin: 1rem 0;
 }
 
-.centered-content ul {
+.home-content ul {
     list-style-position: inside;
     display: inline-block;
     text-align: left;
     margin: 1rem 0;
 }
 
-.centered-content li {
+.home-content li {
     margin: 0.5rem 0;
 }
 
 /* Quote styling */
-.quote {
+blockquote {
     font-style: italic;
     font-size: 1.2rem;
     color: #555;
@@ -60,37 +60,37 @@ order: 1
 }
 
 /* Links styling */
-.centered-content a {
+.home-content a {
     color: #007bff;
     text-decoration: none;
 }
 
-.centered-content a:hover {
+.home-content a:hover {
     text-decoration: underline;
 }
 
 @media (max-width: 768px) {
-    .centered-content {
+    .home-content {
         padding: 1rem;
-        min-height: 90vh;
+        min-height: 70vh;
     }
     
-    .centered-content h1 {
+    .home-content h1 {
         font-size: 2rem;
     }
     
-    .centered-content h2 {
+    .home-content h2 {
         font-size: 1.2rem;
     }
     
-    .quote {
+    blockquote {
         font-size: 1rem;
         padding-left: 0.5rem;
     }
 }
 </style>
 
-<div class="centered-content">
+<div class="home-content">
 
 # 👋 Hi, I'm **Abdelrahman El-Sherif**
 ## Data Scientist
