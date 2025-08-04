@@ -3,8 +3,6 @@ icon: fas fa-code
 order: 4
 ---
 
-# Skills
-
 ## Programming Languages
 - **Python**: Advanced proficiency in data analysis, machine learning, and automation
 - **SQL**: Expert in complex queries, database design, and optimization
