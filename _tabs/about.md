@@ -93,7 +93,7 @@ order: 1
 
 > "Data alone means nothing; insight turns it into power."
 
-Hello, I'm Abdelrahman EL-Shreif, a data scientist passionate about solving real-world business problems through data-driven thinking and automation.
+Iam passionate about solving real-world business problems through data-driven thinking and automation.
 
 I specialize in delivering strategic data solutions for businesses working in:
 
