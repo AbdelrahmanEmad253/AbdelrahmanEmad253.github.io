@@ -2,43 +2,6 @@
 layout: home
 ---
 
-<style>
-/* Custom CSS for centering content */
-.centered-home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    text-align: center;
-    padding: 2rem;
-}
-
-.centered-home .content {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.centered-home h1,
-.centered-home h2,
-.centered-home p {
-    text-align: center;
-}
-
-.centered-home ul {
-    list-style-position: inside;
-    display: inline-block;
-    text-align: left;
-}
-
-@media (max-width: 768px) {
-    .centered-home {
-        padding: 1rem;
-        min-height: 90vh;
-    }
-}
-</style>
-
 <div class="centered-home">
     <div class="content">
         {{ content }}

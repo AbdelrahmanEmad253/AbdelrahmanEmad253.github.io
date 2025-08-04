@@ -1,64 +1,124 @@
 /* Custom CSS for centering content */
 
 /* Center the main content area */
-.layout-home .main-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 80vh;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
-}
-
-/* Center the content within the layout */
-.layout-home .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-/* Ensure the page content is centered */
-.layout-home {
+.layout-home .main-content,
+.centered-home {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    text-align: center;
+    padding: 2rem;
 }
 
-/* Center all text content */
-.layout-home h1,
-.layout-home h2,
-.layout-home p,
-.layout-home ul {
+.centered-home .content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.centered-home h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.centered-home h2 {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 2rem;
+    font-weight: normal;
+}
+
+.centered-home h1,
+.centered-home h2,
+.centered-home p {
     text-align: center;
+}
+
+.centered-home ul {
+    list-style-position: inside;
+    display: inline-block;
+    text-align: left;
+    margin: 1rem 0;
+}
+
+.centered-home li {
+    margin: 0.5rem 0;
+}
+
+/* Quote styling */
+.quote {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #555;
+    border-left: 4px solid #007bff;
+    padding-left: 1rem;
+    margin: 2rem 0;
+    text-align: center;
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
 
-/* Center lists */
-.layout-home ul {
-    list-style-position: inside;
-    display: inline-block;
-    text-align: left;
+/* Placeholder images */
+.placeholder-images {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.placeholder {
+    background: #f8f9fa;
+    border: 2px dashed #dee2e6;
+    padding: 2rem;
+    border-radius: 8px;
+    min-width: 150px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6c757d;
+    font-style: italic;
+}
+
+/* Links styling */
+.centered-home a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.centered-home a:hover {
+    text-decoration: underline;
 }
 
 /* Responsive design */
 @media (max-width: 768px) {
-    .layout-home .main-content {
+    .centered-home {
         padding: 1rem;
-        min-height: 70vh;
+        min-height: 90vh;
     }
     
-    .layout-home .content {
-        max-width: 100%;
+    .centered-home h1 {
+        font-size: 2rem;
+    }
+    
+    .centered-home h2 {
+        font-size: 1.2rem;
+    }
+    
+    .quote {
+        font-size: 1rem;
+        padding-left: 0.5rem;
+    }
+    
+    .placeholder-images {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .placeholder {
+        min-width: 200px;
     }
 } 
