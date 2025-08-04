@@ -8,33 +8,34 @@ order: 3
     margin-bottom: 2rem;
     padding: 1.5rem;
     border-left: 4px solid #007bff;
-    background-color: #f8f9fa;
+    background-color: #2d3748;
     border-radius: 0 8px 8px 0;
+    color: #e2e8f0;
 }
 
 .experience-title {
     font-size: 1.3rem;
     font-weight: bold;
-    color: #333;
+    color: #f7fafc;
     margin-bottom: 0.5rem;
 }
 
 .experience-company {
     font-size: 1.1rem;
-    color: #007bff;
+    color: #63b3ed;
     font-weight: 600;
     margin-bottom: 0.5rem;
 }
 
 .experience-date {
     font-size: 0.9rem;
-    color: #666;
+    color: #a0aec0;
     font-style: italic;
     margin-bottom: 1rem;
 }
 
 .experience-description {
-    color: #555;
+    color: #cbd5e0;
     line-height: 1.6;
 }
 

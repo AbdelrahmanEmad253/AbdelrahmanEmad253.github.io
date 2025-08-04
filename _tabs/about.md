@@ -5,7 +5,7 @@ order: 1
 
 <style>
 /* Custom CSS for centering content */
-.about-content {
+.page__content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,35 +17,35 @@ order: 1
     margin: 0 auto;
 }
 
-.about-content h1 {
+.page__content h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
 }
 
-.about-content h2 {
+.page__content h2 {
     font-size: 1.5rem;
     color: #666;
     margin-bottom: 2rem;
     font-weight: normal;
 }
 
-.about-content p {
+.page__content p {
     text-align: center;
     margin: 1rem 0;
 }
 
-.about-content ul {
+.page__content ul {
     list-style-position: inside;
     display: inline-block;
     text-align: left;
     margin: 1rem 0;
 }
 
-.about-content li {
+.page__content li {
     margin: 0.5rem 0;
 }
 
-.about-content blockquote {
+.page__content blockquote {
     font-style: italic;
     font-size: 1.2rem;
     color: #555;
@@ -58,37 +58,35 @@ order: 1
     margin-right: auto;
 }
 
-.about-content a {
+.page__content a {
     color: #007bff;
     text-decoration: none;
 }
 
-.about-content a:hover {
+.page__content a:hover {
     text-decoration: underline;
 }
 
 @media (max-width: 768px) {
-    .about-content {
+    .page__content {
         padding: 1rem;
         min-height: 70vh;
     }
     
-    .about-content h1 {
+    .page__content h1 {
         font-size: 2rem;
     }
     
-    .about-content h2 {
+    .page__content h2 {
         font-size: 1.2rem;
     }
     
-    .about-content blockquote {
+    .page__content blockquote {
         font-size: 1rem;
         padding-left: 0.5rem;
     }
 }
 </style>
-
-<div class="about-content">
 
 # 👋 Hi, I'm **Abdelrahman El-Sherif**
 ## Data Scientist
@@ -107,6 +105,4 @@ I specialize in delivering strategic data solutions for businesses working in:
 
 With a background in AI and hands-on experience across real projects, I bring your raw data to life using tools - [check the skills tab](/skills).
 
-Whether you need to launch a new strategy, automate insights, or unlock hidden patterns in your business, I'm ready to support your vision with practical, scalable data science.
-
-</div> 
+Whether you need to launch a new strategy, automate insights, or unlock hidden patterns in your business, I'm ready to support your vision with practical, scalable data science. 
