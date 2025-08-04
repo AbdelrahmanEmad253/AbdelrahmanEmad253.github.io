@@ -1,0 +1,64 @@
+/* Custom CSS for centering content */
+
+/* Center the main content area */
+.layout-home .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Center the content within the layout */
+.layout-home .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Ensure the page content is centered */
+.layout-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Center all text content */
+.layout-home h1,
+.layout-home h2,
+.layout-home p,
+.layout-home ul {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Center lists */
+.layout-home ul {
+    list-style-position: inside;
+    display: inline-block;
+    text-align: left;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .layout-home .main-content {
+        padding: 1rem;
+        min-height: 70vh;
+    }
+    
+    .layout-home .content {
+        max-width: 100%;
+    }
+} 
