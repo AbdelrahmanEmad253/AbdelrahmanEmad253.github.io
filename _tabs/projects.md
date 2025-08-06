@@ -113,11 +113,77 @@ order: 5
     transition: background-color 0.2s ease;
     display: inline-block;
     margin-top: 0.5rem;
+    cursor: pointer;
+    border: none;
 }
 
 .dashboard-button:hover {
     background-color: #218838;
     color: white;
+}
+
+/* Dashboard Modal Styles */
+.dashboard-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow-y: auto;
+}
+
+.dashboard-modal-content {
+    background-color: #1a202c;
+    margin: 5% auto;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 1200px;
+    position: relative;
+    color: #e2e8f0;
+}
+
+.close-modal {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+.close-modal:hover {
+    color: #fff;
+}
+
+.dashboard-images {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.dashboard-image-container {
+    text-align: center;
+}
+
+.dashboard-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.dashboard-image-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #f7fafc;
+    margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -132,6 +198,12 @@ order: 5
     
     .project-title {
         font-size: 1.2rem;
+    }
+    
+    .dashboard-modal-content {
+        width: 95%;
+        margin: 2% auto;
+        padding: 1rem;
     }
 }
 </style>
@@ -197,10 +269,66 @@ order: 5
                 </div>
                 <div class="project-links">
                     <a href="https://github.com/AbdelrahmanEmad253/TechMarket_Analysis.git" class="project-link" target="_blank">View Code</a>
-                    <a href="#" class="dashboard-button">View Dashboards</a>
+                    <button class="dashboard-button" onclick="openDashboardModal()">View Dashboards</button>
                 </div>
             </div>
         </div>
 
     </div>
-</div> 
+</div>
+
+<!-- Dashboard Modal -->
+<div id="dashboardModal" class="dashboard-modal">
+    <div class="dashboard-modal-content">
+        <span class="close-modal" onclick="closeDashboardModal()">&times;</span>
+        <h2 style="color: #f7fafc; margin-bottom: 1rem;">Tech Market Analytics Dashboards</h2>
+        <p style="color: #cbd5e0; margin-bottom: 2rem;">Interactive Power BI dashboards showcasing comprehensive analysis of tech job market data from 7 major platforms.</p>
+        
+        <div class="dashboard-images">
+            <div class="dashboard-image-container">
+                <div class="dashboard-image-title">Global Tech Market Overview</div>
+                <img src="/assets/projects/glob.jpg" alt="Global Tech Market Dashboard" class="dashboard-image">
+            </div>
+            
+            <div class="dashboard-image-container">
+                <div class="dashboard-image-title">Tech Layoffs Analysis</div>
+                <img src="/assets/projects/lay.jpg" alt="Tech Layoffs Dashboard" class="dashboard-image">
+            </div>
+            
+            <div class="dashboard-image-container">
+                <div class="dashboard-image-title">Egypt Regional Analysis</div>
+                <img src="/assets/projects/egy1.jpg" alt="Egypt Regional Dashboard" class="dashboard-image">
+            </div>
+            
+            <div class="dashboard-image-container">
+                <div class="dashboard-image-title">Egypt Economic Indicators</div>
+                <img src="/assets/projects/egy2.jpg" alt="Egypt Economic Dashboard" class="dashboard-image">
+            </div>
+            
+            <div class="dashboard-image-container">
+                <div class="dashboard-image-title">USA Tech Market Analysis</div>
+                <img src="/assets/projects/usa.jpg" alt="USA Tech Market Dashboard" class="dashboard-image">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function openDashboardModal() {
+    document.getElementById('dashboardModal').style.display = 'block';
+    document.body.style.overflow = 'hidden';
+}
+
+function closeDashboardModal() {
+    document.getElementById('dashboardModal').style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
+
+// Close modal when clicking outside of it
+window.onclick = function(event) {
+    var modal = document.getElementById('dashboardModal');
+    if (event.target == modal) {
+        closeDashboardModal();
+    }
+}
+</script> 
