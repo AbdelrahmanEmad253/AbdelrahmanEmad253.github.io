@@ -91,11 +91,33 @@ order: 5
     font-weight: 600;
     font-size: 0.9rem;
     transition: color 0.2s ease;
+    padding: 0.5rem 1rem;
+    border: 1px solid #63b3ed;
+    border-radius: 5px;
 }
 
 .project-link:hover {
     color: #007bff;
-    text-decoration: underline;
+    background-color: #007bff;
+    color: white;
+}
+
+.dashboard-button {
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+.dashboard-button:hover {
+    background-color: #218838;
+    color: white;
 }
 
 @media (max-width: 768px) {
@@ -122,20 +144,19 @@ order: 5
         <div class="project-item">
             <img src="/assets/projects/youtube-logo.png" alt="YouTube Data Analysis" class="project-image">
             <div class="project-content">
-                <div class="project-title">YouTube Data Analysis Dashboard</div>
+                <div class="project-title">YouTube Transcript Analysis</div>
                 <div class="project-description">
-                    Comprehensive analysis of YouTube trending videos data, featuring interactive visualizations and insights into video performance metrics, viewership patterns, and content trends across different categories and regions.
+                    AI-powered YouTube transcript analysis system developed during the Mentorness AI internship. Features natural language processing to extract insights from video transcripts and analyze content patterns.
                 </div>
                 <div class="project-tech">
                     <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Pandas</span>
-                    <span class="tech-tag">Matplotlib</span>
-                    <span class="tech-tag">Seaborn</span>
-                    <span class="tech-tag">Jupyter</span>
+                    <span class="tech-tag">NLP</span>
+                    <span class="tech-tag">YouTube API</span>
+                    <span class="tech-tag">Text Analysis</span>
+                    <span class="tech-tag">AI</span>
                 </div>
                 <div class="project-links">
-                    <a href="https://github.com/AbdelrahmanEmad253/YouTube-Data-Analysis" class="project-link" target="_blank">View Code</a>
-                    <a href="#" class="project-link">Live Demo</a>
+                    <a href="https://github.com/AbdelrahmanEmad253/youtube_transcript.git" class="project-link" target="_blank">View Code</a>
                 </div>
             </div>
         </div>
@@ -155,8 +176,7 @@ order: 5
                     <span class="tech-tag">Computer Vision</span>
                 </div>
                 <div class="project-links">
-                    <a href="https://github.com/AbdelrahmanEmad253/Leaf-Disease-Detection" class="project-link" target="_blank">View Code</a>
-                    <a href="#" class="project-link">Live Demo</a>
+                    <a href="https://github.com/AbdelrahmanEmad253/LEAF_DISEASE_DETECTION" class="project-link" target="_blank">View Code</a>
                 </div>
             </div>
         </div>
@@ -166,89 +186,18 @@ order: 5
             <div class="project-content">
                 <div class="project-title">Tech Market Analytics Dashboard</div>
                 <div class="project-description">
-                    Interactive dashboard for analyzing technology market trends, featuring real-time data visualization, market insights, and comprehensive analytics for tech industry stakeholders and investors.
+                    Comprehensive analysis of over 600,000 tech job listings from 7 major platforms including TechLayoff, Upwork, Indeed, Wuzzuf, Egytech, Monster, and RemoteOK. Features interactive Power BI dashboards with job market insights, salary analysis, and trend visualizations.
                 </div>
                 <div class="project-tech">
                     <span class="tech-tag">Power BI</span>
-                    <span class="tech-tag">SQL</span>
-                    <span class="tech-tag">Data Visualization</span>
-                    <span class="tech-tag">Business Intelligence</span>
-                    <span class="tech-tag">Dashboard</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Web Scraping</span>
+                    <span class="tech-tag">Data Analysis</span>
+                    <span class="tech-tag">Jupyter</span>
                 </div>
                 <div class="project-links">
-                    <a href="https://github.com/AbdelrahmanEmad253/Tech-Market-Analytics" class="project-link" target="_blank">View Code</a>
-                    <a href="#" class="project-link">Live Demo</a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<div class="projects-section">
-    <div class="projects-title">🌍 Additional Project Visualizations</div>
-    
-    <div class="projects-grid">
-        <div class="project-item">
-            <img src="/assets/projects/usa.jpg" alt="USA Data Visualization" class="project-image">
-            <div class="project-content">
-                <div class="project-title">USA Data Analysis</div>
-                <div class="project-description">
-                    Geographic data visualization and analysis of United States datasets, featuring interactive maps and regional insights.
-                </div>
-                <div class="project-tech">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Geopandas</span>
-                    <span class="tech-tag">Plotly</span>
-                    <span class="tech-tag">Data Visualization</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="project-item">
-            <img src="/assets/projects/egy1.jpg" alt="Egypt Data Visualization 1" class="project-image">
-            <div class="project-content">
-                <div class="project-title">Egypt Regional Analysis</div>
-                <div class="project-description">
-                    Comprehensive analysis of Egyptian regional data with interactive visualizations and demographic insights.
-                </div>
-                <div class="project-tech">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Matplotlib</span>
-                    <span class="tech-tag">Seaborn</span>
-                    <span class="tech-tag">Data Analysis</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="project-item">
-            <img src="/assets/projects/egy2.jpg" alt="Egypt Data Visualization 2" class="project-image">
-            <div class="project-content">
-                <div class="project-title">Egypt Economic Dashboard</div>
-                <div class="project-description">
-                    Economic indicators and trends analysis for Egypt with interactive charts and statistical insights.
-                </div>
-                <div class="project-tech">
-                    <span class="tech-tag">Power BI</span>
-                    <span class="tech-tag">Excel</span>
-                    <span class="tech-tag">Statistical Analysis</span>
-                    <span class="tech-tag">Dashboard</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="project-item">
-            <img src="/assets/projects/glob.jpg" alt="Global Data Visualization" class="project-image">
-            <div class="project-content">
-                <div class="project-title">Global Analytics Platform</div>
-                <div class="project-description">
-                    Worldwide data analysis platform featuring cross-country comparisons and global trend visualizations.
-                </div>
-                <div class="project-tech">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Tableau</span>
-                    <span class="tech-tag">SQL</span>
-                    <span class="tech-tag">Global Analytics</span>
+                    <a href="https://github.com/AbdelrahmanEmad253/TechMarket_Analysis.git" class="project-link" target="_blank">View Code</a>
+                    <a href="#" class="dashboard-button">View Dashboards</a>
                 </div>
             </div>
         </div>
