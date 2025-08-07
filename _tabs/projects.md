@@ -269,66 +269,10 @@ order: 5
                 </div>
                 <div class="project-links">
                     <a href="https://github.com/AbdelrahmanEmad253/TechMarket_Analysis.git" class="project-link" target="_blank">View Code</a>
-                    <button class="dashboard-button" onclick="openDashboardModal()">View Dashboards</button>
+                    <a href="https://app.powerbi.com/groups/me/reports/9aca18a9-c0fd-4cc7-b92c-e3af25552905/4f0343399a198c4984b9?experience=power-bi" class="dashboard-button" target="_blank">View Interactive Dashboard</a>
                 </div>
             </div>
         </div>
 
     </div>
-</div>
-
-<!-- Dashboard Modal -->
-<div id="dashboardModal" class="dashboard-modal">
-    <div class="dashboard-modal-content">
-        <span class="close-modal" onclick="closeDashboardModal()">&times;</span>
-        <h2 style="color: #f7fafc; margin-bottom: 1rem;">Tech Market Analytics Dashboards</h2>
-        <p style="color: #cbd5e0; margin-bottom: 2rem;">Interactive Power BI dashboards showcasing comprehensive analysis of tech job market data from 7 major platforms.</p>
-        
-        <div class="dashboard-images">
-            <div class="dashboard-image-container">
-                <div class="dashboard-image-title">Global Tech Market Overview</div>
-                <img src="/assets/projects/glob.jpg" alt="Global Tech Market Dashboard" class="dashboard-image">
-            </div>
-            
-            <div class="dashboard-image-container">
-                <div class="dashboard-image-title">Tech Layoffs Analysis</div>
-                <img src="/assets/projects/lay.jpg" alt="Tech Layoffs Dashboard" class="dashboard-image">
-            </div>
-            
-            <div class="dashboard-image-container">
-                <div class="dashboard-image-title">Egypt Regional Analysis</div>
-                <img src="/assets/projects/egy1.jpg" alt="Egypt Regional Dashboard" class="dashboard-image">
-            </div>
-            
-            <div class="dashboard-image-container">
-                <div class="dashboard-image-title">Egypt Economic Indicators</div>
-                <img src="/assets/projects/egy2.jpg" alt="Egypt Economic Dashboard" class="dashboard-image">
-            </div>
-            
-            <div class="dashboard-image-container">
-                <div class="dashboard-image-title">USA Tech Market Analysis</div>
-                <img src="/assets/projects/usa.jpg" alt="USA Tech Market Dashboard" class="dashboard-image">
-            </div>
-        </div>
-    </div>
-</div>
-
-<script>
-function openDashboardModal() {
-    document.getElementById('dashboardModal').style.display = 'block';
-    document.body.style.overflow = 'hidden';
-}
-
-function closeDashboardModal() {
-    document.getElementById('dashboardModal').style.display = 'none';
-    document.body.style.overflow = 'auto';
-}
-
-// Close modal when clicking outside of it
-window.onclick = function(event) {
-    var modal = document.getElementById('dashboardModal');
-    if (event.target == modal) {
-        closeDashboardModal();
-    }
-}
-</script> 
+</div> 
